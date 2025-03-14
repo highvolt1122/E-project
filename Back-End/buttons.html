@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="./img/water-slide.png">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Buttons</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <style>
+         body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .header-banner {
+            background: linear-gradient(135deg, #007bff 0%, #00c6ff 100%);
+            color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .dashboard-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            height: 100%;
+            transition: transform 0.2s;
+        }
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+        }
+        .dashboard-card-header {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            font-weight: bold;
+        }
+        .dashboard-card-body {
+            padding: 20px;
+        }
+        .stat-value {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .stat-label {
+            font-size: 14px;
+            color: #6c757d;
+        }
+        .badge-operational {
+            background-color: #28a745;
+            color: white;
+        }
+        .badge-closed {
+            background-color: #dc3545;
+            color: white;
+        }
+        .btn-maintenance {
+            background-color: #ffc107;
+            color: #212529;
+        }
+        .btn-end-maintenance {
+            background-color: #28a745;
+            color: white;
+        }
+        .quick-action-btn {
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .attraction-row:hover {
+            background-color: #f8f9fa;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">SL Water Park Admin <sup>2</sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item ">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Interface
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Components</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item active" href="buttons.html">Components Of WaterPark</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Addons
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Team Management:</h6>
+                        <a class="collapse-item" href="login.html">Our Team</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Charts</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tables</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+           
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Message Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
+                                            problem I've been having.</div>
+                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                            alt="...">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">I have the photos that you ordered last month, how
+                                            would you like them sent to you?</div>
+                                        <div class="small text-gray-500">Jae Chun · 1d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Last month's report looks great, I am very happy with
+                                            the progress so far, keep up the good work!</div>
+                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
+                                            told me that people say this to all dogs, even if they aren't good...</div>
+                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="profile.html">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="setting.html">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <div class="container-fluid py-4">
+                    <!-- Header -->
+                    <div class="header-banner mb-4">
+                        <h1><i class="fas fa-water me-2"></i> Smile Land Water Park - Admin Dashboard</h1>
+                        <p class="mb-0">Today: <span id="current-date"></span> | Admin: Park Manager</p>
+                    </div>
+            
+                    <!-- Stats Row -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-3">
+                            <div class="dashboard-card">
+                                <div class="dashboard-card-header">Current Visitors</div>
+                                <div class="dashboard-card-body">
+                                    <div class="stat-value" id="current-visitors">842</div>
+                                    <div class="stat-label">of 2000 daily capacity</div>
+                                    <div class="progress mt-2">
+                                        <div class="progress-bar" role="progressbar" id="visitor-progress" style="width: 42%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dashboard-card">
+                                <div class="dashboard-card-header">Today's Revenue</div>
+                                <div class="dashboard-card-body">
+                                    <div class="stat-value" id="today-revenue">$28,675.50</div>
+                                    <div class="stat-label">
+                                        <i class="fas fa-chart-line text-success me-1"></i> 12% higher than average
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dashboard-card">
+                                <div class="dashboard-card-header">Attractions Status</div>
+                                <div class="dashboard-card-body">
+                                    <div class="row">
+                                        <div class="col-6 text-center">
+                                            <div class="stat-value text-success" id="open-rides">12</div>
+                                            <div class="stat-label">Open</div>
+                                        </div>
+                                        <div class="col-6 text-center">
+                                            <div class="stat-value text-danger" id="closed-rides">2</div>
+                                            <div class="stat-label">Closed</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="dashboard-card">
+                                <div class="dashboard-card-header">Park Conditions</div>
+                                <div class="dashboard-card-body">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span>Weather:</span>
+                                        <span class="fw-bold" id="weather-status">Sunny</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span>Water Quality:</span>
+                                        <span class="fw-bold text-success" id="water-quality">Excellent</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <span>Staff On Duty:</span>
+                                        <span class="fw-bold" id="staff-count">45</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Main Content Row -->
+                    <div class="row g-3">
+                        <!-- Attractions Table -->
+                        <div class="col-lg-8">
+                            <div class="dashboard-card">
+                                <div class="dashboard-card-header d-flex justify-content-between align-items-center">
+                                    <span>Attractions Management</span>
+                                    <button class="btn btn-primary btn-sm"><i class="fas fa-plus me-1"></i> Add New Attraction</button>
+                                </div>
+                                <div class="dashboard-card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover" id="attractions-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th class="text-center">Status</th>
+                                                    <th class="text-center">Queue (min)</th>
+                                                    <th class="text-center">Actions</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Table rows will be populated by JavaScript -->
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Quick Actions Panel -->
+                        <div class="col-lg-4">
+                            <div class="dashboard-card">
+                                <div class="dashboard-card-header">Quick Actions</div>
+                                <div class="dashboard-card-body">
+                                    <button class="btn btn-primary quick-action-btn"><i class="fas fa-bullhorn me-2"></i> Send Park Announcement</button>
+                                    <button class="btn btn-info quick-action-btn text-white"><i class="fas fa-users me-2"></i> Staff Management</button>
+                                    <button class="btn btn-success quick-action-btn"><i class="fas fa-ticket-alt me-2"></i> View Ticket Sales</button>
+                                    <button class="btn btn-warning quick-action-btn"><i class="fas fa-exclamation-triangle me-2"></i> Incident Reports (2)</button>
+                                    <button class="btn btn-danger quick-action-btn"><i class="fas fa-first-aid me-2"></i> Emergency Protocols</button>
+                                    
+                                    <hr>
+                                    
+                                    <h5 class="mt-4 mb-3">Today's Peak Times</h5>
+                                    <div id="peak-times-chart" style="height: 200px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Smile_land_waterpark 2025</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="../index.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current date
+            const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', dateOptions);
+            
+            // Sample attractions data
+            const attractions = [
+                { id: 1, name: 'Tsunami Wave Pool', status: 'Operational', queue: 15, maintenance: false },
+                { id: 2, name: 'Typhoon Water Slide', status: 'Operational', queue: 35, maintenance: false },
+                { id: 3, name: 'Kids Splash Zone', status: 'Operational', queue: 8, maintenance: false },
+                { id: 4, name: 'Lazy River', status: 'Operational', queue: 22, maintenance: false },
+                { id: 5, name: 'Tornado Tunnel', status: 'Closed', queue: 0, maintenance: true },
+                { id: 6, name: 'Surf Simulator', status: 'Operational', queue: 28, maintenance: false },
+                { id: 7, name: 'Pirate Cove', status: 'Operational', queue: 18, maintenance: false },
+                { id: 8, name: 'Tropical Paradise', status: 'Closed', queue: 0, maintenance: true }
+            ];
+            
+            // Populate attractions table
+            const attractionsTable = document.getElementById('attractions-table').getElementsByTagName('tbody')[0];
+            
+            attractions.forEach(attraction => {
+                const row = attractionsTable.insertRow();
+                row.className = 'attraction-row';
+                
+                // Name cell
+                const nameCell = row.insertCell(0);
+                nameCell.textContent = attraction.name;
+                
+                // Status cell
+                const statusCell = row.insertCell(1);
+                statusCell.classList.add('text-center');
+                const statusBadge = document.createElement('span');
+                statusBadge.className = `badge ${attraction.status === 'Operational' ? 'badge-operational' : 'badge-closed'}`;
+                statusBadge.textContent = attraction.status;
+                statusCell.appendChild(statusBadge);
+                
+                // Queue cell
+                const queueCell = row.insertCell(2);
+                queueCell.classList.add('text-center');
+                queueCell.textContent = attraction.queue;
+                
+                // Actions cell
+                const actionsCell = row.insertCell(3);
+                actionsCell.classList.add('text-center');
+                const actionButton = document.createElement('button');
+                actionButton.className = attraction.maintenance ? 'btn btn-sm btn-end-maintenance' : 'btn btn-sm btn-maintenance';
+                actionButton.textContent = attraction.maintenance ? 'End Maintenance' : 'Set Maintenance';
+                actionButton.dataset.id = attraction.id;
+                actionButton.addEventListener('click', toggleMaintenance);
+                actionsCell.appendChild(actionButton);
+            });
+            
+            // Function to toggle maintenance status
+            function toggleMaintenance(event) {
+                const id = parseInt(event.target.dataset.id);
+                
+                // Find attraction in the array
+                const attractionIndex = attractions.findIndex(a => a.id === id);
+                if (attractionIndex !== -1) {
+                    const attraction = attractions[attractionIndex];
+                    attraction.maintenance = !attraction.maintenance;
+                    attraction.status = attraction.maintenance ? 'Closed' : 'Operational';
+                    attraction.queue = attraction.maintenance ? 0 : attraction.queue;
+                    
+                    // Update UI
+                    const row = event.target.closest('tr');
+                    const statusCell = row.cells[1].firstChild;
+                    statusCell.className = `badge ${attraction.status === 'Operational' ? 'badge-operational' : 'badge-closed'}`;
+                    statusCell.textContent = attraction.status;
+                    
+                    row.cells[2].textContent = attraction.queue;
+                    
+                    event.target.className = attraction.maintenance ? 'btn btn-sm btn-end-maintenance' : 'btn btn-sm btn-maintenance';
+                    event.target.textContent = attraction.maintenance ? 'End Maintenance' : 'Set Maintenance';
+                    
+                    // Update summary counts
+                    updateSummary();
+                }
+            }
+            
+            // Update summary statistics
+            function updateSummary() {
+                const openRides = attractions.filter(a => a.status === 'Operational').length;
+                const closedRides = attractions.filter(a => a.status === 'Closed').length;
+                
+                document.getElementById('open-rides').textContent = openRides;
+                document.getElementById('closed-rides').textContent = closedRides;
+            }
+            
+            // Initialize chart for peak times
+            const peakTimesCtx = document.createElement('canvas');
+            document.getElementById('peak-times-chart').appendChild(peakTimesCtx);
+            
+            new Chart(peakTimesCtx, {
+                type: 'line',
+                data: {
+                    labels: ['9AM', '10AM', '11AM', '12PM', '1PM', '2PM', '3PM', '4PM', '5PM'],
+                    datasets: [{
+                        label: 'Visitors',
+                        data: [125, 283, 490, 725, 842, 768, 695, 610, 425],
+                        borderColor: '#007bff',
+                        backgroundColor: 'rgba(0, 123, 255, 0.1)',
+                        tension: 0.3,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>
